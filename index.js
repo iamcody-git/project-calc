@@ -22,7 +22,7 @@ function calculate(calculation) {
     }
 
 
-    document.getElementById("result").innerHTML = " " + result;
+    document.getElementById("result").innerHTML = `${num1} ${calculation} ${num2}= ${result}`;
 
 
   }

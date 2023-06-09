@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+<html>
+	<div class="calculator">
+        <h2>Calculator</h2>
+		<div class="screen">
+			<p id="result"></p>
+		</div><br>
+		 <label for="operand1" onclick="getResult()">Operand 1:</label>
+    <input type="number" id="operand1"><br><br>
+    <label for="operand2" onclick="getResult()">Operand 2:</label>
+    <input type="number" id="operand2"><br><br>
+
+		<div class="keys">   
+			
+			<button onclick="clearResult()">clear</button><br>
+            <button onclick="getResult('+')">ADD</button><br>
+			<button onclick="getResult('-')">Subtract</button><br>
+			<button onclick="getResult('*')">Multiply</button><br>
+			<button onclick="getResult('/')">Division</button><br>
+            <button onclick="getResult('%')">Remainder</button><br>
+			<button onclick="calculate()">=</button>
+            <p id="result"></p>
+			
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
