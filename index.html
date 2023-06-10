@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Calculator</title>
- 
 </head>
-
 <body>
   <div class="calculator">
     <h1>Calculator</h1>
@@ -20,11 +19,12 @@
     <input type="number" id="num2"><br><br>
 
     <div class="keys">
-      <button onclick="calculate('+').value">Add</button>
+      <button onclick="calculate('+')">Add</button>
       <button onclick="calculate('-')">Subtract</button>
       <button onclick="calculate('*')">Multiply</button>
       <button onclick="calculate('/')">Divide</button>
       <button onclick="calculate('%')">Remainder</button>
+      <button  id="clear" onclick="clear()">Clear</button>
     </div>
 
   </div>
