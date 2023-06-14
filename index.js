@@ -1,3 +1,5 @@
+// functioning part
+
 function calculate(calculation) {
     var num1 = parseFloat(document.getElementById("num1").value);
     var num2 = parseFloat(document.getElementById("num2").value);
@@ -24,8 +26,10 @@ function calculate(calculation) {
     document.getElementById("result").innerHTML = `${num1} ${calculation} ${num2}= ${result}`;
   }
 
-  function clear(){
-    document.querySelector('#clear').value=0;
-    document.getElementById("num1").value=0;
-    document.getElementById("num2").value=0;
+  // to clear the output
+
+  function clear_result(){
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("num1").value="";
+    document.getElementById("num2").value="";
 }
